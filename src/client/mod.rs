@@ -19,6 +19,9 @@ pub mod rtu;
 #[cfg(feature = "tcp")]
 pub mod tcp;
 
+#[cfg(feature = "rtuovertcp")]
+pub mod rtuovertcp;
+
 #[cfg(feature = "sync")]
 pub mod sync;
 
