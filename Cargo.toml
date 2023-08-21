@@ -62,6 +62,7 @@ rtu = ["futures-util/sink"]
 tcp = ["tokio/net", "futures-util/sink"]
 rtuovertcp = ["tokio/net", "futures-util/sink"]
 rtu-sync = ["rtu", "sync", "dep:tokio-serial"]
+rtuovertcp-sync = ["rtuovertcp", "sync"]
 tcp-sync = ["tcp", "sync"]
 rtu-server = ["rtu", "server", "tokio/macros", "dep:tokio-serial"]
 tcp-server = [

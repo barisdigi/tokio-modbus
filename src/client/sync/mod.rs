@@ -9,6 +9,9 @@ pub mod rtu;
 #[cfg(feature = "tcp-sync")]
 pub mod tcp;
 
+#[cfg(feature = "rtuovertcp-sync")]
+pub mod rtuovertcp;
+
 use std::{future::Future, io::Result, time::Duration};
 
 use futures::future::Either;

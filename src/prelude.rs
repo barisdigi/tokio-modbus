@@ -21,6 +21,12 @@ pub mod tcp {
 }
 
 #[allow(missing_docs)]
+#[cfg(feature = "rtuovertcp")]
+pub mod rtuovertcp {
+    pub use crate::client::rtuovertcp::*;
+}
+
+#[allow(missing_docs)]
 #[cfg(feature = "sync")]
 pub mod sync {
     pub use crate::client::sync::*;
